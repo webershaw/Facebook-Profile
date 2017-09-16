@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Fetch Data via Facebook Graph API</title>
+
+	<!-- Awesome Fonts -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+<body>
+	
+<div class="container">
+ 	<div class="row">
+		<div class="col-xs-12 visible-xs visible-sm wel-come">
+		</div>
+
+		<!-- header -->
+		<div class="col-xs-12" id="header">
+			<p><i class="fa fa-user" aria-hidden="true"></i> About</p>
+		</div>
+		<!-- header ends -->
+
+		<!-- menu -->
+		<div class="col-xs-4" id="menu">
+			<ul>	
+
+					<li id="about"><a href="#">About Me</a> <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+					<div id="get-about">
+						<p id="about-me"></p>
+					</div>
+
+					<li id="contact"><a href="#">Contact and Basic Info</a> <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+					<div id="get-contact">
+						<p>Email <span id="myEmail"></span></p>
+						<p>Facebook <span id="myProfile"></span></p>
+						<p>Birthday <span id="birthday"></span></p>
+						<p>Gender <span id="gender"></span></p>
+					</div>
+
+					<li id="education"><a href="#">Education</a><span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+					<div id="get-education">
+					</div>
+
+					<li id="places"><a href="#">Places I've lived</a><span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+					<div id="get-places">
+						<p>Hometown <span id="hometown"></span></p>
+						<p>Current City <span id="current"></span></p>
+					</div>
+
+			</ul>
+		</div>
+		<!-- menu ends -->
+
+		<!-- fetched content  -->
+		<div class="col-xs-8" id="content">
+
+			<div id="welcome">
+			</div>
+			
+			<!-- loader -->
+			<div class="spinner">
+			  <div class="rect1"></div>
+			  <div class="rect2"></div>
+			  <div class="rect3"></div>
+			  <div class="rect4"></div>
+			  <div class="rect5"></div>
+			</div>
+			<!-- loader ends -->
+
+			<div id="info">
+			</div>
+
+		</div>
+		<!-- content ends -->
+
+	</div>
+</div>
+
+	<!-- jQuery -->
+	<script src="assets/js/lib/jquery-3.2.1.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/app.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+</body>
+</html>
+
